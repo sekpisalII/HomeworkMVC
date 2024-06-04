@@ -12,10 +12,10 @@ public class UserController {
     public List<UserDto> getAllUser() {
         return userService.getAllUser();
     }
-    public List<UserDto> addNewUser(User user) {
-        return  userService. addNewByUser(user);
+    public void addNewUser(User user) {
+        userService.addNewByUser(user);
     }
-    public List<UserDto>  deleteUser(Integer id){
+    public List<UserDto> deleteUser(Integer id){
         return userService.deleteByUser(id);
     }
 }

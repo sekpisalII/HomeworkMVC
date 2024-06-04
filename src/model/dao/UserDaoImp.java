@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoImp  implements UserDao{
-    private List<User> userList  = new ArrayList<>(
+    private final List<User> userList  = new ArrayList<>(
             List.of(new User(1,"Sal","Sal@gmail.com"),
                     new User(2,"Hong","Hong@gmail.com"))
     );
